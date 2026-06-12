@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nestmatch — find a Madrid rental in plain language</title>
+  <meta name="description" content="Describe the flat you want in plain language and Nestmatch ranks Madrid listings by how well they actually match — with a reason for every result." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏠</text></svg>" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="top">
+    <div class="brand">🏠 Nestmatch</div>
+    <p class="lede">Describe your ideal Madrid flat in plain language — Nestmatch reads it, ranks the listings, and tells you <em>why</em> each one matched.</p>
+
+    <div class="searchbar">
+      <input id="q" type="text" placeholder="e.g. a quiet 2-bed near a metro in Chamberí under €1500 with a desk" autocomplete="off" />
+      <button id="go">Search</button>
+    </div>
+
+    <div class="examples">
+      <span>Try:</span>
+      <button data-example="A sunny studio under €1100 near a metro">sunny studio · €1100 · metro</button>
+      <button data-example="A pet-friendly 2 bedroom near a park, quiet street">pet-friendly · park · quiet</button>
+      <button data-example="A modern 3 bedroom in Salamanca with parking and a gym">3-bed Salamanca · parking · gym</button>
+    </div>
+
+    <p id="summary" class="summary"></p>
+  </header>
+
+  <details class="filters">
+    <summary>Quick filters</summary>
+    <div class="frow"><label>Bedrooms</label><div id="beds" class="chips"></div></div>
+    <div class="frow"><label>Budget</label><div id="budget" class="chips"></div></div>
+    <div class="frow"><label>Neighborhood</label><div id="hood" class="chips"></div></div>
+    <div class="frow"><label>Must-haves</label><div id="feats" class="chips"></div></div>
+  </details>
+
+  <div class="resultshead"><h2>Results</h2><span id="count"></span></div>
+  <main id="results" class="grid"></main>
+
+  <footer>Demo data only · all listings are fictional · matching runs entirely in your browser</footer>
+
+  <script type="module" src="src/app.js"></script>
+</body>
+</html>
