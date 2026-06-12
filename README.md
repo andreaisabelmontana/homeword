@@ -1,14 +1,12 @@
-# Nestmatch
+# Rental Finder
 
-Describe the flat you want in **plain language** — *"a quiet 2-bed near a metro in Chamberí under €1500 with a desk"* — and Nestmatch reads it, ranks the Madrid listings by how well they actually fit, and shows a **reason for every match and miss**.
+Describe the flat you want in **plain language** — *"a quiet 2-bed near a metro in Chamberí under €1500 with a desk"* — and Rental Finder reads it, ranks the Madrid listings by how well they actually fit, and shows a **reason for every match and miss**.
 
-**▶ Live:** https://andreaisabelmontana.github.io/nestmatch/
-
-> **Not an original idea.** This recreates the concept of an existing project — I didn't invent it. I rebuilt it from scratch, my own way, out of curiosity about how it actually works (and tried to make it a little better along the way).
+**▶ Live:** https://andreaisabelmontana.github.io/rental-finder/
 
 ## How it works
 
-Instead of a black-box model, Nestmatch uses a small, **transparent rule + keyword matcher** that runs entirely in your browser — no API key, no backend:
+Instead of a black-box model, Rental Finder uses a small, **transparent rule + keyword matcher** that runs entirely in your browser — no API key, no backend:
 
 1. **Parse** — pull structured requirements from the sentence: budget, bedrooms, neighborhood, and feature keywords (e.g. *"near a metro"* → `metro`, *"home office"* → `desk`)
 2. **Hard-filter** — drop anything that can't satisfy budget, bedroom count, or neighborhood
