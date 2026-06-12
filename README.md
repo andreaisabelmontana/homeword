@@ -4,6 +4,8 @@ Describe the flat you want in **plain language** — *"a quiet 2-bed near a metr
 
 **▶ Live:** https://andreaisabelmontana.github.io/nestmatch/
 
+> **Not an original idea.** This recreates the concept of an existing project — I didn't invent it. I rebuilt it from scratch, my own way, out of curiosity about how it actually works (and tried to make it a little better along the way).
+
 ## How it works
 
 Instead of a black-box model, Nestmatch uses a small, **transparent rule + keyword matcher** that runs entirely in your browser — no API key, no backend:
